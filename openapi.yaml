@@ -651,7 +651,7 @@ components:
 
         **This creates an asynchronous task** - the response will contain a task ID with state "submitted".
         You must poll the task using `tasks/get` to check when it completes.
-        
+
         **Expected processing time:** 60-180 seconds (browser automation is slow).
       required:
         - message
@@ -863,7 +863,7 @@ components:
 
         **Use this method to poll for task completion** after calling `message/send`.
         Poll every 5-10 seconds until the state is "completed", "failed", or "canceled".
-        
+
         **Note:** Meme generation takes 60-180 seconds due to browser automation.
       required:
         - taskId
